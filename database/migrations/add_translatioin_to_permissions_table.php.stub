@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+
+class AddTranslatioinToPermissionsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('permissions', function (Blueprint $table) {
+        $table->json('translation')->nullable()->after('description');
+        $table->string('permissionsdisplays_id')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('permissions', function (Blueprint $table) {
+            $table->dropColumn('translation','permissionsdisplays_id');
+        });
+
+    }
+}
