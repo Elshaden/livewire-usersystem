@@ -18,10 +18,7 @@
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.9.2",
-        "spatie/laravel-permission": "^4.0.0",
-        "illuminate/contracts": "^8.0" ,
-        "livewire/livewire": "^2.0",
-        "kdion4891/laravel-livewire-tables": "^1.6"
+
     },
     "require-dev": {
         "nunomaduro/collision": "^5.0",
